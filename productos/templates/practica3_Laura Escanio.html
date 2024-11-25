@@ -1,0 +1,249 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Práctica de Bootstrap</title>
+    <link rel="icon" href="{% static 'img/florecita.png' %}" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="{% static 'css/estilosLau.css' %}">
+    
+    
+  </head>
+  <body>
+
+    <nav class="navbar_estilos navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img class="imgMenu" src="{% static 'img/florecita.png' %}">
+        <a class="navbar-brand texto_nav" href="#inicio">BootstrapByLau</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link texto_nav" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto_nav" href="#concepto">Concepto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto_nav" href="#elementos">Elementos</a>
+            </li>
+           
+    </nav>
+    <br>
+    <h1 id="inicio">Bootstrap: Herramienta Responsiva.</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'img/1.jpg' %}" class="img-fluid round-circle" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="{% static 'img/2.jpg' %}" class="img-fluid round-circle" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="{% static 'img/3.jpg' %}" class="img-fluid round-circle" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <p>
+            Bootstrap es un potente framework que facilita el diseño web responsivo, permitiendo que los sitios se adapten de forma automáticamente a diferentes tamaños de pantalla, desde móviles hasta computadoras de escritorio. 
+          </p>
+          
+          <p>
+            Su sistema de rejilla flexible y sus clases específicas para distintos dispositivos aseguran una experiencia de usuario óptima en cualquier plataforma, simplificando el desarrollo y mejorando la usabilidad del sitio.
+          </p>
+        </div>
+      </div>
+    
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <h5 class="card-header">Conceptos Básicos</h5>
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+
+              <p class="card-text">
+                Bootstrap es un framework frontend utilizado para diseñar sitios web responsivos y móviles. 
+                Ofrece una serie de componentes y clases predefinidas que facilitan la creación de interfaces modernas y adaptativas.
+              </p>
+
+              <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="btn btn-info">Leer más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/-ZInT4p9hH8?si=lvD8CrAM2vqgZAMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <h2 id="elementos" class="mt-5">Elementos de Bootstrap</h2>
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Concepto</th>
+
+          <th>Definición</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Responsive</td>
+
+          <td>Habilidad para ajustar el diseño de acuerdo con el tamaño de la pantalla del dispositivo.</td>
+        
+        </tr>
+        <tr>
+          <td>Sistema de Rejilla</td>
+
+          <td>Un sistema flexible basado en columnas que permite organizar el contenido en una página web.</td>
+        </tr>
+        <tr>
+          <td>Componentes</td>
+
+          <td>Conjunto de elementos predefinidos como botones, formularios y carruseles que facilitan el desarrollo.</td>
+        </tr>
+      </tbody>
+    </table>
+
+     <div class="row">
+      <div class="col-md-6 mt-5">
+        <div class="card" aria-hidden="true">
+          <img src="IMG/1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title placeholder-glow">
+              <span class="placeholder col-6"></span>
+            </h5>
+            <p class="card-text placeholder-glow">
+              <span class="placeholder col-7"></span>
+              <span class="placeholder col-4"></span>
+              <span class="placeholder col-4"></span>
+              <span class="placeholder col-6"></span>
+              <span class="placeholder col-8"></span>
+            </p>
+            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mt-5">
+        <div class="card" aria-hidden="true">
+          <img src="IMG/3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title placeholder-glow">
+              <span class="placeholder col-6"></span>
+            </h5>
+            <p class="card-text placeholder-glow">
+              <span class="placeholder col-7"></span>
+              <span class="placeholder col-12"></span>
+              <span class="placeholder col-5"></span>
+              <span class="placeholder col-3"></span>
+            
+            </p>
+            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div id="liveAlertPlaceholder"></div>
+    <button type="button" class="btn btn-info" id="liveAlertBtn" style="background-color: #6d4cab; color: white; position: fixed; top: 25px; right: 20px; z-index: 1000; border-radius: 20px;">
+      Página hecha por: Laura Escanio
+    </button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Bienvenido al Modal</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Debes tomar en cuenta que los modales pueden ser como este o pueden ser estaticos.
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere est laborum animi nesciunt omnis. Obcaecati ipsam quos fugit dolor nam. Inventore porro corporis aliquid est asperiores facere doloribus iste eos officiis, facilis minima reiciendis perspiciatis minus ex ducimus neque ab architecto sequi molestias quas quos magni. Repellendus enim molestiae at?</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-info">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+      const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+      const appendAlert = (message, type) => {
+        const wrapper = document.createElement('div')
+        wrapper.innerHTML = [
+          `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+          `   <div>${message}</div>`,
+          '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+          '</div>'
+        ].join('')
+
+        alertPlaceholder.append(wrapper)
+      }
+
+      const alertTrigger = document.getElementById('liveAlertBtn')
+      if (alertTrigger) {
+        alertTrigger.addEventListener('click', () => {
+          appendAlert('Esta es una alerta de que todo va bien', 'success')
+        })
+      }
+    </script>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
